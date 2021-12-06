@@ -1,0 +1,30 @@
+{
+  "name": "swap-v3-subgraph",
+  "version": "1.0.1",
+  "repository": "https://github.com/sumswap/sumswap-v3-subgraph/",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "start":"yarn watch-local",
+    "codegen": "graph codegen --output-dir src/types/",
+    "build": "graph build",
+    "create-local": "graph create /sumswap/sumswap-v3-subgraph --node http://127.0.0.1:7545 --debug",
+    "deploy-local": "graph deploy /sumswap/sumswap-v3-subgraph --debug --node http://127.0.0.1:7545",
+    "deploy": "graph deploy /sumswap/sumswap-v3-subgraph --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
+    "remove": "graph remove /sumswap/sumswap-v3-subgraph --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
+    "watch-local": "graph deploy /sumswap/sumswap-v3-subgraph --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
+  },
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.25.0",
+    "@graphprotocol/graph-ts": "^0.24.1",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.0",
+    "typescript": "^4.5.2"
+  },
+  "resolutions": {
+    "concat-stream": "^2.0.0",
+    "ndjson": "^2.0.0"
+  }
+}

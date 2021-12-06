@@ -1,8 +1,5 @@
 specVersion: 0.0.2
 description: Swap v3 subgraph on Arbitrum-One.
-# graft:
-#   base: QmdDnZ9ts3XDFSaxEu1UcBk6Fh47XbEu3DuqAffeJGYuCN
-#   block: 808482
 repository: https://github.com/sumswap/sumswap-v3-subgraph
 schema:
   file: ./schema.graphql
